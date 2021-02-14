@@ -1,0 +1,84 @@
+body {
+  background-color: OrangeRed;
+}
+
+* {
+  color: white;
+}
+
+.header1 {
+  padding: 20pt;
+    text-align: center;
+    background: DarkOrange;
+    color: white;
+    font-size: 30pt;
+    font-family: fantasy;
+
+}
+
+.header2 {
+  padding: 10pt;
+    text-align: center;
+    background: DarkOrange;
+    color: white;
+    font-size: 27pt;
+    font-family: fantasy;
+
+}
+
+.Navi {
+  padding: 10pt;
+  text-align: center;
+  background: Orange;
+  color: white;
+  font-size: 20pt;
+  font-family: fantasy;
+}
+
+
+
+a:hover {
+  text-decoration: underline;
+  color: red;
+  font-weight: bold;
+  background-color: DarkSlateGray;
+}
+
+h3 {
+  font-size: 23pt;
+  font-weight: bold;
+  font-family: fantasy;
+  color: black;
+  padding: 10pt;
+
+}
+
+p1 {
+  font-size: 15pt;
+  font-family: serif;
+  color: black;
+
+}
+
+.MainBody {
+  background-color: Gray;
+  margin: 40pt
+}
+
+img {
+
+  border: 5pt solid black;
+  margin: 5pt;
+}
+
+figcaption {
+  padding: 5pt;
+}
+
+footer {
+  background-color: tomato;
+  font-family: cursive;
+  font-size: 12pt;
+  padding: 10pt;
+  text-align: center;
+}

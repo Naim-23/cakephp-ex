@@ -1,0 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  line-height: 1;
+  float: none;
+  cursor: auto;
+  /* Resets all browser formatting from the main elements */
+}
