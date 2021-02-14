@@ -1,10 +1,8 @@
 body {
   background-color: OrangeRed;
 }
+/* Sets the background colour of entire page*/
 
-* {
-  color: white;
-}
 
 .header1 {
   padding: 20pt;
@@ -42,6 +40,16 @@ a:hover {
   color: red;
   font-weight: bold;
   background-color: DarkSlateGray;
+}
+
+a:link {
+  text-decoration: underline;
+  color: red;
+}
+
+a:visited {
+  text-decoration: underline;
+  color: red;
 }
 
 h3 {
