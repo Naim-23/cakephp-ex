@@ -1,14 +1,17 @@
-p1 {
+.para1 {
+
   background-color: pink;
   font-family: serif;
   color: blue;
   font-size: 12pt
+  
+
 }
 
-p2 {
+.para2 {
 background-color: green;
 font-family: fantasy;
 color: white;
-font-size: 14
+font-size: 14pt
 
 }
