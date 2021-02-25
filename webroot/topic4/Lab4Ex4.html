@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <meta charset="utf-8">
+        <title>Shirt Order Form</title>
+          <link rel="stylesheet" href="reset.css" type="text/css"/>
+          <link rel="stylesheet" href="exercise4.css" type="text/css"/>
+
+    </head>
+    <body>
+
+      <form method="post" action="http://cakephp-mysql-persistent-qmweblab.apps.okd.eecs.qmul.ac.uk/topic4/Lab4Ex4/week4_process.php">
+ <fieldset>
+
+      <legend>Shirt Order Form</legend>
+
+
+
+<div class="Section1">
+
+  <p>
+ <label>Shirt Size</label> <br>
+ <select name="Sizes">
+ <option>Choose size</option>
+ <option>XS</option>
+ <option>S</option>
+ <option>M</option>
+ <option>L</option>
+ <option>XL</option>
+ </select>
+ </p>
+
+<p>
+  <label>Sleeves</label> <br>
+  <input type="radio" name="Sleeves" value="1" checked>Short <br>
+<input type="radio" name="Sleeves" value="2">Long <br>
+
+</p>
+
+<p>
+  <label for = "colour choice"> Choose Shirt Colour</label> <br>
+   <input type="color" id = "colour choice" name="colorChoice">
+</p>
+
+<p>
+  <label>Quantity</label> <br>
+  <input type="number" min="1" max="10" name="Quantity">
+  </p>
+
+  <p>
+    <label>Date Requested</label> <br>
+    <input type="date">
+    </p>
+
+    </div>
+
+    <div class="Section2">
+
+      <p>
+        <label>Name</label> <br>
+  <input type="text" name="Name">
+  </p>
+
+  <p>
+    <label>Email Address</label> <br>
+    <input type="email">
+    </p>
+
+    <p>
+      <label>Telephone Number</label> <br>
+      <input type=“tel”> Example: 44-207-882-1234
+</p>
+</div>
+
+<div class="Section3">
+
+  <p>
+    <label>Address</label> <br>
+    <input type = "text" name = "Address">
+    </p>
+
+    <p>
+      <label>City</label> <br>
+      <input type="text" name="City" list="Cities">
+ <datalist id="Cities">
+ <option>Nottingham</option>
+ <option>London</option>
+ <option>York</option>
+ <option>Sheffield</option>
+ </datalist>
+ </p>
+
+ <p>
+   <label>Post Code</label> <br>
+   <input type = "text" name = "Post Code">
+   </p>
+
+</div>
+
+<footer>
+
+  <label>Please keep me informed about future shirt designs</label>
+<input type="checkbox" name="accept"> <br>
+<br>
+ <input type="submit"> <input type="reset" value="Clear Form">
+
+ </footer>
+
+ </fieldset>
+</form>
+
+
+
+    </body>
+
+
+
+</html>
