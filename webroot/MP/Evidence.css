@@ -1,0 +1,102 @@
+html, body {
+  overflow-x: hidden;
+
+}
+
+.Navi a:link, a:active a:hover {
+  text-decoration: none;
+  color: grey;
+
+}
+
+.Navi a:visited {
+  color: grey;
+}
+
+.hr {
+  width: 100%;
+  color:white;
+}
+
+
+.FrontHeader {
+text-align: center;
+    background: black;
+    color: red;
+    font-size: 35pt;
+    font-family: fantasy;
+width: 100%;
+margin: 0;
+position: absolute;
+top: 0;
+     left: 0;
+     margin-right: none;
+}
+
+.Navi {
+  text-align: center;
+  background: black;
+  color: white;
+  font-size: 20pt;
+  font-family: fantasy;
+  width: 100%;
+  margin: 0;
+position: absolute;
+  top: 40pt;
+       left: 0;
+ }
+
+     .MainBody {
+       background-image: url("MPBackground.jfif");
+       width: 100%;
+       margin: 0;
+       height: 315%;
+       top: 64pt;
+            left: 0;
+          position: absolute;
+text-align: center;
+}
+
+.PP {
+  padding: 50px;
+}
+
+.OOP {
+  padding: 200px;
+}
+
+.Webs {
+  padding: 380px;
+  font-size: 16px;
+
+}
+
+.Webs a:link, a:active a:hover,li {
+  text-decoration: underline;
+  color: white;
+  font-size: 20px;
+
+}
+
+.Webs a:visited {
+  color: white;
+}
+
+.MainBody p {
+  font-size: 15pt;
+  font-family: sans-serif;
+  color: white;
+}
+
+.MainBody figure {
+  float: left;
+}
+
+.Heading {
+  font-family: sans-serif;
+  font-size: 2em;
+  color: white;
+  text-decoration: underline;
+
+
+}

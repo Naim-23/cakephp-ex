@@ -1,0 +1,63 @@
+body {
+  background-image: url("MPBackground.jfif");
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  background-position: center;
+  font-family: sans-serif;
+
+}
+
+
+.LoginBox {
+  width: 320px;
+  height: 330px;
+  background: black;
+  color: crimson;
+  top:50%;
+  left:50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  border: crimson;
+  padding:70px 30px;
+}
+
+h1 {
+  margin: 0;
+  padding: 0 0 20px;
+  text-align: center;
+  font-size: 22px;
+}
+
+.LoginBox p {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+}
+
+.LoginBox input {
+  width: 100%;
+  margin-bottom: 18px;
+
+}
+
+.LoginBox input[type = "email"], input[type = "password"] {
+  border: none;
+  border-bottom: 0.2px solid white;
+
+  background: transparent;
+  outline: none;
+  height: 40px;
+  color: white;
+  font-size: 16px;
+}
+
+.LoginBox input[type = "submit"] {
+  border: none;
+  outline: none;
+  height: 40px;
+  background: red;
+  font-size:18px;
+  border-radius: 20px;
+}

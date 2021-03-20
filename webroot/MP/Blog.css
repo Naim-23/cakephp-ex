@@ -1,0 +1,95 @@
+html, body {
+  overflow-x: hidden;
+
+}
+
+.Navi a:link, a:active a:hover {
+  text-decoration: none;
+  color: grey;
+
+}
+
+.Navi a:visited {
+  color: grey;
+}
+
+.hr {
+  width: 100%;
+  color:white;
+}
+
+
+.FrontHeader {
+text-align: center;
+    background: black;
+    color: red;
+    font-size: 35pt;
+    font-family: fantasy;
+width: 100%;
+margin: 0;
+position: absolute;
+top: 0;
+     left: 0;
+     margin-right: none;
+}
+
+.Navi {
+  text-align: center;
+  background: black;
+  color: white;
+  font-size: 20pt;
+  font-family: fantasy;
+  width: 100%;
+  margin: 0;
+position: absolute;
+  top: 40pt;
+       left: 0;
+ }
+
+     .MainBody {
+       background-image: url("MPBackground.jfif");
+       width: 100%;
+       margin: 0;
+       height: 100%;
+       top: 64pt;
+            left: 0;
+          position: absolute;
+text-align: center;
+}
+
+.Blog {
+  width: 520px;
+    height: 430px;
+    background: black;
+    color: crimson;
+    top:50%;
+    left:50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    border: crimson;
+    padding:70px 30px;
+
+}
+
+header {
+  margin: 0;
+  padding: 0 0 20px;
+  text-align: center;
+  font-size: 30pt;
+}
+
+.Blog input[type ="text"] {
+  border-radius: 20px;
+}
+
+.Blog textarea {
+  border-radius: 20px;
+}
+
+.Blog button {
+  border-radius: 20px;
+  background-color: black;
+  border-color: crimson;
+  color: white;
+}
