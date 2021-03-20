@@ -1,6 +1,6 @@
 html, body {
   overflow-x: hidden;
-
+  background-color: black;
 }
 
 .Navi a:link, a:active a:hover {
@@ -47,10 +47,10 @@ position: absolute;
  }
 
      .MainBody {
-       background-image: url("WORKPLZ.jpg");
+       background-image: url("Portfolio.jpg");
        width: 100%;
        margin: 0;
-       height: 110%;
+       height: 100%;
        top: 64pt;
             left: 0;
           position: absolute;
