@@ -10,7 +10,7 @@ if (isset($_POST['email'])) {
   $password=$_POST['password'];
 
   $value = mysqli_query($conn, "SELECT * FROM LOGIN1 WHERE email = '$email' AND password = '$password' ");
-  $row = mysql_fetch_array($value);
+  $row = mysqli_fetch_array($value);
 
   if (is_array($row)){
               $_SESSION["email"] = $row ['email'];
