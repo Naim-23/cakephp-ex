@@ -43,7 +43,7 @@ $conn = new mysqli($dbhost, $dbuser, $dbpwd, $dbname);
 
       <div class="LoginBox">
         <h1>Login</h1>
-        <form>
+        <form action="Validation.php" method="POST">
           <p>Email</p>
           <input type= "email" name="email" placeholder = "Enter Email Here ">
           <p>Password</p>
