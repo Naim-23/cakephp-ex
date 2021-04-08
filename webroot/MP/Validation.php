@@ -5,7 +5,7 @@ $dbpwd = getenv("DATABASE_PASSWORD");
 $dbname = getenv("ecs417");
 $conn = new mysqli($dbhost, $dbuser, $dbpwd, $dbname);
 
-if (isset($_POST['email'])) {
+if (isset($_POST['login'])) {
   $email=$_POST['email'];
   $password=$_POST['password'];
 
