@@ -10,16 +10,21 @@ if (isset($_POST['email'])) {
   $password=$_POST['password'];
 
   $value = mysqli_query($conn, "SELECT * FROM LOGIN1 WHERE email = '$email' AND password = '$password' ");
-  if(mysqli_num_rows($value)==1)
-  {
-     header("location: Blog.php");
-  }
+  $row = mysql_fetch_array($value);
 
-  else {
-    echo "Invalid Email Or Password";
-  }
+  if (is_array($row)){
+              $_SESSION["email"] = $row ['email'];
+              $_SESSION["password"] = $row ['password'];
+                  if ($_POST['email'] == $email && $_POST['password'] == $password){
+                   $_SESSION['email'] =$email;
+                   echo '<script>location.href = "Blog.php"</script>';
+                  }
+          }
+          else{
 
-}
+              echo "Invalid Email or Password";
+          }
+      }
 
 
 
