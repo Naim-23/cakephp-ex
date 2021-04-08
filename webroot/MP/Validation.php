@@ -2,8 +2,12 @@
 $dbhost = getenv("MYSQL_SERVICE_HOST");
 $dbuser = getenv("DATABASE_USER");
 $dbpwd = getenv("DATABASE_PASSWORD");
-$dbname = getenv("ecs417");
+$dbname = getenv("DATABASE_NAME");
 $conn = new mysqli($dbhost, $dbuser, $dbpwd, $dbname);
+
+if ($conn->connect_error) {
+ die("Connection failed: " . $conn->connect_error);
+}
 
 if (isset($_POST['login'])) {
   $email=$_POST['email'];
