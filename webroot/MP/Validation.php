@@ -9,7 +9,7 @@ if (isset($_POST['email'])) {
   $email=$_POST['email'];
   $password=$_POST['password'];
 
-  $value = mysqli_query($conn, "select * from LOGIN where email = '$email' AND password = '$password'");
+  $value = mysqli_query($conn, "SELECT * FROM LOGIN WHERE email = '$email' AND password = '$password'");
   if(mysqli_num_rows($value)==1) {
      header("location: Blog.php");
   }
