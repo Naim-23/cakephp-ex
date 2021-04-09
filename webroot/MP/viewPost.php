@@ -16,8 +16,13 @@ $result = mysqli_query($conn,$query);
 <!DOCTYPE html>
 <html>
 <title>
-  <head>Blog Posts</head>
+  Blog Posts
 </title>
+<style>
+body {
+  color:orange;
+}
+</style>
 
 <body>
 
@@ -50,12 +55,3 @@ $result = mysqli_query($conn,$query);
   </table>
 </body>
 </html>
-
-
-
-
-
-
-
-
-     ?>
