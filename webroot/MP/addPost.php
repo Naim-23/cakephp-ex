@@ -17,7 +17,7 @@ if (isset($_POST['submit'])) {
   $postTime = time("H:i:s");
   $postDate = date("d/m/y");
 
-  $value = "INSERT INTO DATA(title, content, postTime, postDate) VALUES ('$title', '$text', '$postTime', '$postDate')";
+  $value = "INSERT INTO BLOG (title, content, postTime, postDate) VALUES ('$title', '$text', '$postTime', '$postDate')";
   $mysqli_query($conn,$sql);
 
    echo '<script>location.href = "viewPost.php"</script>';
