@@ -9,15 +9,16 @@ if ($conn->connect_error) {
  die("Connection failed: " . $conn->connect_error);
 }
 echo ('Not Working');
+$title=$_POST['title'];
+$text=$_POST['text'];
+date_default_timezone_set("Europe/London");
+$postTime = date("H:i:s");
+$postDate = date("d/m/y");
 
 if (isset($_POST['submit'])) {
 
   echo ('Here');
-  $title=$_POST['title'];
-  $text=$_POST['text'];
-  date_default_timezone_set("Europe/London");
-  $postTime = date("H:i:s");
-  $postDate = date("d/m/y");
+
 
   $value = "INSERT INTO BLOG (title, content, postTime, postDate) VALUES ('$title', '$text', '$postTime', '$postDate')";
   $mysqli_query($conn,$value);
