@@ -1,5 +1,15 @@
 <?php
 session_start();
+$dbhost = getenv("MYSQL_SERVICE_HOST");
+$dbuser = getenv("DATABASE_USER");
+$dbpwd = getenv("DATABASE_PASSWORD");
+$dbname = getenv("DATABASE_NAME");
+
+$conn = new mysqli($dbhost, $dbuser, $dbpwd, $dbname);
+
+if ($conn->connect_error) {
+ die("Connection failed: " . $conn->connect_error);
+}
 
 
 
@@ -44,13 +54,13 @@ session_start();
     <div class="MainBody">
     <div class="Blog"> <a id="Blog"></a>
 <h>Blog</h>
-<form id="Form">
+<form id="Form" action = "addPost.php" method = "POST">
       <input type="text" id = "title" name="Title" placeholder = "Title">
       <br><br>
 
       <textarea id="TextBox" name ="text" placeholder = "Enter Text Here" rows="9" cols="50"> </textarea>
       <br>
-      <button type = "submit" onclick="Submission()">Post</button>
+      <button type = "submit" name "submit" onclick="Submission()">Post</button>
       &nbsp;&nbsp;
       <input type="button" onclick="confirmClear()" value="Clear Entry">
 </form>
