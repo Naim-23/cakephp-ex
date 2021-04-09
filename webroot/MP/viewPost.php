@@ -10,7 +10,7 @@ if ($conn->connect_error) {
 }
 
 $query = "select * from BLOG";
-$result = mysqli_query($conn, $query);
+$result = mysql_query($query);
 ?>
 
 <!DOCTYPE html>
@@ -23,7 +23,7 @@ $result = mysqli_query($conn, $query);
 
   <table align= "center" border ="1px" style = "width:600px; line-height:40px;">
     <tr>
-      <th><h2>Blog Posts</h2></th>
+      <th colspan="4"><h2>Blog Posts</h2></th>
     </tr>
     <t>
       <th>Title</th>
