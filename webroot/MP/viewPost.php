@@ -10,7 +10,7 @@ if ($conn->connect_error) {
 }
 
 $query = "select * from BLOG";
-$result = mysqli_query($query);
+$result = mysqli_query($conn, $query);
 ?>
 
 <!DOCTYPE html>
