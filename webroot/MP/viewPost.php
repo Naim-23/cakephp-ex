@@ -20,7 +20,7 @@ $result = mysqli_query($conn,$query);
 </title>
 <style>
 body {
-  color:orange;
+  background-color: orange;
 }
 </style>
 
