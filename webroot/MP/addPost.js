@@ -10,18 +10,20 @@ function Submission() {
   {
     alert("You must fill in the title!");
     event.preventDefault();
-    document.getElementById("title").style.background="yellow";
+    document.getElementById("title").style.background="crimson";
   }
 
   else if (document.getElementById("TextBox").value == "")
   {
     alert("You must fill in the text area!");
     event.preventDefault();
-    document.getElementById("TextBox").style.background="yellow"
+    document.getElementById("TextBox").style.background="crimson"
   }
 
   else {
     event.submit();
+    document.getElementById("title").style.background="black";
+    document.getElementById("TextBox").style.background="white";
   }
 
 }
