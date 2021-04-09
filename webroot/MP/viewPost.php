@@ -9,8 +9,8 @@ if ($conn->connect_error) {
  die("Connection failed: " . $conn->connect_error);
 }
 
-$query = "select * from BLOG";
-$result = mysql_query($conn,$query);
+$query = "SELECT * FROM BLOG";
+$result = mysqli_query($conn,$query);
 ?>
 
 <!DOCTYPE html>
@@ -34,7 +34,7 @@ $result = mysql_query($conn,$query);
 
     <?php
 
-    while($rows = mysql_fetch_assoc($result)) {
+    while($rows = mysqli_fetch_assoc($result)) {
 ?>
       <tr>
       <td><?php echo $rows['title']; ?></td>
