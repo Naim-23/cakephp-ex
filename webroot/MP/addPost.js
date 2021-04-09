@@ -10,12 +10,14 @@ function Submission() {
   {
     alert("You must fill in the title!");
     event.preventDefault();
+    document.getElementById("title").style.background="yellow";
   }
 
   else if (document.getElementById("TextBox").value == "")
   {
     alert("You must fill in the text area!");
     event.preventDefault();
+    document.getElementById("TextBox").style.background="yellow"
   }
 
   else {
