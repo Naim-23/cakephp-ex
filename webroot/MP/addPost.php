@@ -14,18 +14,11 @@ $text=$_POST['text'];
 date_default_timezone_set("Europe/London");
 $postTime = date("H:i:s");
 $postDate = date("d/m/y");
+$value = "INSERT INTO BLOG (title, content, postTime, postDate) VALUES ('$title', '$text', '$postTime', '$postDate')";
+$mysqli_query($conn,$value);
 
-if (isset($_POST['submit'])) {
+ header ("location: viewPost.php");
 
-  echo ('Here');
-
-
-  $value = "INSERT INTO BLOG (title, content, postTime, postDate) VALUES ('$title', '$text', '$postTime', '$postDate')";
-  $mysqli_query($conn,$value);
-
-   header ("location: viewPost.php");
-
-      }
 
 
 
