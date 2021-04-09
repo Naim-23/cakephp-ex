@@ -8,9 +8,11 @@ $conn = new mysqli($dbhost, $dbuser, $dbpwd, $dbname);
 if ($conn->connect_error) {
  die("Connection failed: " . $conn->connect_error);
 }
+echo ('Not Working');
 
 if (isset($_POST['submit'])) {
 
+  echo ('Here');
   $title=$_POST['title'];
   $text=$_POST['text'];
   date_default_timezone_set("Europe/London");
