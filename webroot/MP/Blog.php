@@ -55,14 +55,14 @@ if ($conn->connect_error) {
     <div class="Blog"> <a id="Blog"></a>
 <h>Blog</h>
 <form id="Form" action = "addPost.php" method = "POST">
-      <input type="text" id = "title" name="Title" placeholder = "Title">
+      <input type="text" id = "title" name="Title" placeholder = "Title"></input>
       <br><br>
 
       <textarea id="TextBox" name ="text" placeholder = "Enter Text Here" rows="9" cols="50"> </textarea>
       <br>
       <button type = "submit" name "submit" onclick="Submission()">Post</button>
       &nbsp;&nbsp;
-      <input type="button" onclick="confirmClear()" value="Clear Entry">
+      <input type="button" onclick="confirmClear()" value="Clear Entry"></input>
 </form>
 
 
