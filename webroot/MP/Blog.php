@@ -58,7 +58,7 @@ if ($conn->connect_error) {
       <input type="text" id = "title" name="Title" placeholder = "Title"></input>
       <br><br>
 
-      <textarea id="TextBox" name ="text" placeholder = "Enter Text Here" rows="9" cols="50"> </textarea>
+      <textarea id="TextBox" rows = "9" cols = "50" name ="text" placeholder = "Enter Text Here"> </textarea>
       <br>
       <button type = "submit" name "submit" onclick="Submission()">Post</button>
       &nbsp;&nbsp;
