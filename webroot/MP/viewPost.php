@@ -40,6 +40,7 @@ body {
     <?php
 
     while($rows = mysqli_fetch_assoc($result)) {
+      rsort($rows);
 ?>
       <tr>
       <td><?php echo $rows['title']; ?></td>
