@@ -45,7 +45,7 @@ if ($conn->connect_error) {
          <div class="Navi">
         <a href="http://cakephp-mysql-persistent-qmweblab.apps.okd.eecs.qmul.ac.uk/MP/PortfolioFrontPage.html">Home</a>
         &nbsp;&nbsp;&nbsp;
-        <a href="#Blog">Blog</a>
+        <a href="viewPost.php">Blog</a>
         &nbsp;&nbsp;&nbsp;
       </div>
     </nav>
