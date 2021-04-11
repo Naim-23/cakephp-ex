@@ -10,6 +10,7 @@ if ($conn->connect_error) {
 }
 
 $query = "SELECT * FROM BLOG";
+rsort($query);
 $result = mysqli_query($conn,$query);
 ?>
 
@@ -40,7 +41,7 @@ body {
     <?php
 
     while($rows = mysqli_fetch_assoc($result)) {
-      rsort($rows);
+
 ?>
       <tr>
       <td><?php echo $rows['title']; ?></td>
