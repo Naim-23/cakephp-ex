@@ -25,18 +25,20 @@ function bubble_sort($arr) {
     return $arr;
 }
 
-$array = array();
 
 
-while($row = mysqli_fetch_assoc($query)){
 
-  $array[] = $row;
+while($row = mysqli_fetch_assoc($result)){
+
+  $arr[] = $row;
 
 
-  echo $row['title'];
+
 
 }
 
+$arr = bubble_sort($arr);
+echo $row['title'];
 
 
 ?>
