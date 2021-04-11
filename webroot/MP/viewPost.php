@@ -28,12 +28,12 @@ function bubble_sort($arr) {
 $array = array();
 
 
-while($row = mysql_fetch_assoc($query)){
+while($row = mysqli_fetch_assoc($query)){
 
   $array[] = $row;
 
 
-  echo $row['title']; // etc
+  echo $row['title'];
 
 }
 
