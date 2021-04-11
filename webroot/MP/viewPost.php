@@ -10,8 +10,9 @@ if ($conn->connect_error) {
 }
 
 $query = "SELECT * FROM BLOG";
-rsort($query);
+
 $result = mysqli_query($conn,$query);
+rsort($result);
 ?>
 
 <!DOCTYPE html>
