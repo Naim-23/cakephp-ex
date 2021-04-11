@@ -8,11 +8,37 @@ $conn = new mysqli($dbhost, $dbuser, $dbpwd, $dbname);
 if ($conn->connect_error) {
  die("Connection failed: " . $conn->connect_error);
 }
-
 $query = "SELECT * FROM BLOG";
 
 $result = mysqli_query($conn,$query);
-rsort($result);
+
+function bubble_sort($arr) {
+    $size = count($arr)-1;
+    for ($i=0; $i<$size; $i++) {
+        for ($j=0; $j<$size-$i; $j++) {
+            $k = $j+1;
+            if ($arr[$k] < $arr[$j]) {
+                list($arr[$j], $arr[$k]) = array($arr[$k], $arr[$j]);
+            }
+        }
+    }
+    return $arr;
+}
+
+$array = array();
+
+
+while($row = mysql_fetch_assoc($query)){
+
+  $array[] = $row;
+
+
+  echo $row['title']; // etc
+
+}
+
+
+
 ?>
 
 <!DOCTYPE html>
