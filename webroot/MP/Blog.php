@@ -63,6 +63,11 @@ if ($conn->connect_error) {
       <button type = "submit" name "submit" onclick="Submission()">Post</button>
       &nbsp;&nbsp;
       <input type="button" onclick="confirmClear()" value="Clear Entry"></input>
+      <div class="Prev">
+                <form id="Preview" action="PreviewPost.php" method = "POST">
+              <button type = "submit" name ="PreviewBut" onclick="Submission()">Preview</button>
+            </form>
+      </div>
 </form>
 
 
@@ -76,11 +81,7 @@ if ($conn->connect_error) {
       <a href="Logout.php" class="button">Logout</a>
       </div>
 
-      <div class="Prev">
-                <form id="Preview" action="PreviewPost.php" method = "POST">
-              <button type = "submit" name ="PreviewBut" onclick="Submission()">Preview</button>
-            </form>
-      </div>
+    
 
 
 
