@@ -110,3 +110,20 @@ a.button {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
+
+
+.Preview button {
+  background-color: red;
+  border: none;
+  color: black;
+  padding: 14px 30px;
+  text-align: center;
+  text-decoration: none;
+ font-family: sans-serif;
+  margin: 0;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
