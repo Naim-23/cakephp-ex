@@ -9,13 +9,13 @@ if ($conn->connect_error) {
  die("Connection failed: " . $conn->connect_error);
 }
 
-$title=$_POST['Title'];
-$text=$_POST['text'];
+$title=$_SESSION['Title'];
+$text=$_SESSION['text'];
 date_default_timezone_set("Europe/London");
 $postTime = date("H:i:s");
 $postDate = date("y/m/d");
 
-$a = "aaaaaa";
+
 
  ?>
 
@@ -45,7 +45,7 @@ $a = "aaaaaa";
 
 
        <tr>
-       <td><?php echo $a; ?></td>
+       <td><?php echo $title; ?></td>
          <td><?php echo $text; ?></td>
            <td><?php echo $postTime; ?></td>
              <td><?php echo $postDate; ?></td>
