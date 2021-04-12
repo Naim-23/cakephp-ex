@@ -15,6 +15,7 @@ date_default_timezone_set("Europe/London");
 $postTime = date("H:i:s");
 $postDate = date("y/m/d");
 
+$a = "aaaaaa";
 
  ?>
 
@@ -44,7 +45,7 @@ $postDate = date("y/m/d");
 
 
        <tr>
-       <td><?php echo $title; ?></td>
+       <td><?php echo $a; ?></td>
          <td><?php echo $text; ?></td>
            <td><?php echo $postTime; ?></td>
              <td><?php echo $postDate; ?></td>
